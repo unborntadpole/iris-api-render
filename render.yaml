@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fastapi-iris
+    env: docker
+    plan: free
+    autoDeploy: true
