@@ -1,6 +1,13 @@
 services:
   - type: web
-    name: fastapi-iris
+    name: iris-api
     env: docker
+    repo: https://github.com/yourusername/your-repo-name
+    branch: main
     plan: free
     autoDeploy: true
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
